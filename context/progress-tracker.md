@@ -9,7 +9,7 @@ change.
 
 ## Current Goal
 
-- Feature 02 complete. Ready for Feature 03.
+- Feature 03 complete. Ready for Feature 04.
 
 ## Completed
 
@@ -25,6 +25,16 @@ change.
   - components/editor/editor-navbar.tsx — fixed h-12 navbar, sidebar toggle with PanelLeftOpen/PanelLeftClose, left/center/right sections
   - components/editor/project-sidebar.tsx — floating overlay sidebar, slides in from left, Projects header + close button, My Projects / Shared tabs with empty states, New Project button
   - Dialog pattern ready: existing components/ui/dialog.tsx + globals.css tokens cover all future dialog needs
+- Feature 03: Auth
+  - @clerk/ui installed; @clerk/nextjs already present
+  - proxy.ts at project root — clerkMiddleware with public route matcher for /sign-in and /sign-up
+  - middleware.ts re-exports from proxy.ts (Next.js auto-discovery)
+  - app/layout.tsx — ClerkProvider wraps root layout with dark theme + CSS variable overrides
+  - app/editor/layout.tsx + app/editor/page.tsx — editor chrome moved under /editor route
+  - app/page.tsx — redirects authenticated users to /editor, unauthenticated to /sign-in
+  - app/sign-in/[[...sign-in]]/page.tsx — two-panel layout (left: logo/tagline/features, right: Clerk SignIn)
+  - app/sign-up/[[...sign-up]]/page.tsx — two-panel layout (left: logo/tagline/features, right: Clerk SignUp)
+  - editor-navbar.tsx — UserButton added to right section
 
 ## In Progress
 
@@ -32,7 +42,7 @@ change.
 
 ## Next Up
 
-- Feature 03 (TBD per feature-specs)
+- Feature 04 (TBD per feature-specs)
 
 ## Open Questions
 
