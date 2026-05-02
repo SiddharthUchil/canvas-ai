@@ -9,7 +9,7 @@ change.
 
 ## Current Goal
 
-- Feature 01: Design System — install and configure shadcn/ui, add UI primitive components, set up dark theme CSS variables, create cn() utility.
+- Feature 02 complete. Ready for Feature 03.
 
 ## Completed
 
@@ -21,6 +21,10 @@ change.
   - lib/utils.ts created with cn() helper (clsx + tailwind-merge)
   - globals.css: dark-only :root with all Ghost AI design tokens + shadcn semantic tokens
   - layout.tsx: `dark` class added to <html> so shadcn dark: variants activate
+- Feature 02: Editor Chrome
+  - components/editor/editor-navbar.tsx — fixed h-12 navbar, sidebar toggle with PanelLeftOpen/PanelLeftClose, left/center/right sections
+  - components/editor/project-sidebar.tsx — floating overlay sidebar, slides in from left, Projects header + close button, My Projects / Shared tabs with empty states, New Project button
+  - Dialog pattern ready: existing components/ui/dialog.tsx + globals.css tokens cover all future dialog needs
 
 ## In Progress
 
@@ -28,7 +32,7 @@ change.
 
 ## Next Up
 
-- Feature 02 (TBD per feature-specs)
+- Feature 03 (TBD per feature-specs)
 
 ## Open Questions
 
