@@ -1,3 +1,8 @@
+## Shell Environment
+
+Always use **WSL (Bash)** for all shell commands. Never use PowerShell.
+Bash path prefix for this project: `/c/Users/siddh/Downloads/ghost-ai`
+
 ## Application Building Context
 
 Read the following files in order before implementing
