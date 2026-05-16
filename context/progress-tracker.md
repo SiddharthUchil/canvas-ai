@@ -9,7 +9,7 @@ change.
 
 ## Current Goal
 
-- Feature 03 complete. Ready for Feature 04.
+- Feature 04: Project Dialogs (In Progress)
 
 ## Completed
 
@@ -38,11 +38,19 @@ change.
 
 ## In Progress
 
-- None.
+- Feature 04: Project Dialogs
+  - hooks/use-project-dialogs.ts — mock data, dialog/form/loading state
+  - lib/project-context.tsx — React context shared across editor shell, sidebar, page
+  - components/editor/dialogs/create-project-dialog.tsx — name input + live slug preview
+  - components/editor/dialogs/rename-project-dialog.tsx — prefilled input, auto-focus, Enter submits
+  - components/editor/dialogs/delete-project-dialog.tsx — destructive confirmation, no input
+  - editor-shell.tsx — provides ProjectContext, renders all 3 dialogs
+  - project-sidebar.tsx — project items with rename/delete actions (owned only), mobile backdrop scrim
+  - app/editor/page.tsx — home screen with heading, description, New Project button
 
 ## Next Up
 
-- Feature 04 (TBD per feature-specs)
+- Feature 05 (TBD per feature-specs)
 
 ## Open Questions
 
